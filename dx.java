@@ -52,8 +52,7 @@ public class Dos implements Runnable {
         int attakingAmoun = 0;
         Dos dos = new Dos(0, 0);
         Scanner in = new Scanner(System.in);
-        System.out.print("Welcome to DDOS by Droxilen
-	Input you target website url: ");
+        System.out.print("Welcome to DDOS by Droxilen, Input you target website url: ");
         url = in.nextLine();
         System.out.println("\n");
         System.out.println("Targeted URL: " + url);
